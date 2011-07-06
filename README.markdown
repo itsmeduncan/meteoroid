@@ -1,4 +1,7 @@
-# Meteoroid
+# Meteoroid [![Build Status](http://travis-ci.org/itsmeduncan/meteoroid.png)](http://travis-ci.org/itsmeduncan/meteoroid)
+
+This is currently under development. The functionality described below is the
+goal of this project.
 
 Parsing JMeter ouput into something useful. It will aggregate the data by 
 path.
