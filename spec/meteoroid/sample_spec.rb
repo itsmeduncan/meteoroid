@@ -46,4 +46,27 @@ describe Meteoroid::Sample do
 
   end
 
+  describe "from_xml" do
+    it "should initialize a Sample from the attribute_nodes" do
+      mock_node = [mock(:name => "lb", :value => "foo")]
+      sample = Meteoroid::Sample.from_xml(mock_node)
+
+      sample.label.should == "foo"
+    end
+
+    it "should initialize a Sample without a URL" do
+      mock_node = [mock(:name => "lb", :value => "foo")]
+      sample = Meteoroid::Sample.from_xml(mock_node)
+
+      sample.url.should == ""
+    end
+
+    it "should initialize a Sample with a URL" do
+      mock_node = [mock(:name => "lb", :value => "foo")]
+      sample = Meteoroid::Sample.from_xml(mock_node, "foo.bar")
+
+      sample.url.should == "foo.bar"
+    end
+  end
+
 end

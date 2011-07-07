@@ -9,7 +9,8 @@ class Meteoroid::Sample
     'rc' => :response_code,
     'rm' => :response_message,
     'tn' => :thread_name,
-    'by' => :bytes
+    'by' => :bytes,
+    'u'  => :url
   }
 
   ATTRIBUTE_CONVERSION = {
@@ -22,14 +23,28 @@ class Meteoroid::Sample
     'rm' => lambda { |rm| rm.to_s },
     'tn' => lambda { |tn| tn.to_s },
     'by' => lambda { |by| by.to_i },
+    'u'  => lambda { |u|  u.to_s }
   }
 
   attr_accessor *ATTRIBUTE_MAPPING.values
+  attr_accessor :url
 
   def initialize attributes
     ATTRIBUTE_MAPPING.each do |key, value|
       instance_variable_set(:"@#{value}", convert(key, attributes[key]))
     end
+  end
+
+  def self.from_xml attribute_nodes, url = nil
+    attributes = {}
+
+    attribute_nodes.each do |node|
+      attributes[node.name] = node.value
+    end
+
+    attributes.merge!({'u' => url}) if url
+
+    new(attributes)
   end
 
   private
