@@ -1,85 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testResults version="1.2">
-<httpSample t="3001" lt="0" ts="1309883019990" s="true" lb="Login" rc="200" rm="OK" tn="Monitored Pages 1-1" dt="text" by="79578">
-  <httpSample t="882" lt="882" ts="1309883019990" s="true" lb="https://foo.bar/users/sign_in" rc="302" rm="Found" tn="Monitored Pages 1-1" dt="text" by="87">
-    <java.net.URL>https://foo.bar/users/sign_in</java.net.URL>
-  </httpSample>
-  <httpSample t="25" lt="25" ts="1309883020874" s="true" lb="https://foo.bar/" rc="302" rm="Found" tn="Monitored Pages 1-1" dt="text" by="86">
-    <java.net.URL>https://foo.bar/</java.net.URL>
-  </httpSample>
-  <httpSample t="2091" lt="2087" ts="1309883020900" s="true" lb="http://foo.bar/" rc="200" rm="OK" tn="Monitored Pages 1-1" dt="text" by="79318">
-    <java.net.URL>http://foo.bar/</java.net.URL>
-  </httpSample>
-  <java.net.URL>http://foo.bar/</java.net.URL>
-</httpSample>
 <httpSample t="2069" lt="2064" ts="1309883022997" s="true" lb="Home Page" rc="200" rm="OK" tn="Monitored Pages 1-1" dt="text" by="79250">
   <java.net.URL>http://foo.bar/</java.net.URL>
 </httpSample>
 <httpSample t="2622" lt="2615" ts="1309883025068" s="true" lb="Federal Legislator Search" rc="200" rm="OK" tn="Monitored Pages 1-1" dt="text" by="87109">
   <java.net.URL>http://foo.bar/federal_legislator_search</java.net.URL>
 </httpSample>
-<httpSample t="3987" lt="3983" ts="1309883027691" s="true" lb="Global Search (EPA)" rc="200" rm="OK" tn="Monitored Pages 1-1" dt="text" by="66322">
-  <java.net.URL>http://foo.bar/global_search/search?q=EPA</java.net.URL>
-</httpSample>
-<httpSample t="10373" lt="10368" ts="1309883031679" s="true" lb="News Search (Obama)" rc="200" rm="OK" tn="Monitored Pages 1-1" dt="text" by="82283">
-  <java.net.URL>http://foo.bar/search/news?news_search[split_required_keywords]=obama&amp;news_search[exact_required_keywords]=&amp;news_search[split_optional_keywords]=&amp;news_search[person_name]=&amp;news_search[split_excluded_keywords]=&amp;news_search[all_sources]=0&amp;news_search[news_source_filter]=&amp;news_search[days_back]=30#searchresults</java.net.URL>
-</httpSample>
-<httpSample t="615" lt="610" ts="1309883042054" s="true" lb="Staffer Search Form" rc="200" rm="OK" tn="Monitored Pages 1-1" dt="text" by="71704">
-  <java.net.URL>http://foo.bar/staffer/search/new</java.net.URL>
-</httpSample>
-<httpSample t="185" lt="0" ts="1309883042938" s="true" lb="Staffer Search (Harry Ried)" rc="200" rm="OK" tn="Monitored Pages 1-1" dt="text" by="60507">
-  <httpSample t="47" lt="47" ts="1309883042938" s="true" lb="http://foo.bar/staffer/search" rc="302" rm="Found" tn="Monitored Pages 1-1" dt="text" by="116">
-    <java.net.URL>http://foo.bar/staffer/search</java.net.URL>
-  </httpSample>
-  <httpSample t="137" lt="134" ts="1309883042986" s="true" lb="http://foo.bar/staffer/search/4231169/results" rc="200" rm="OK" tn="Monitored Pages 1-1" dt="text" by="60275">
-    <java.net.URL>http://foo.bar/staffer/search/4231169/results</java.net.URL>
-  </httpSample>
-  <java.net.URL>http://foo.bar/staffer/search/4231169/results</java.net.URL>
-</httpSample>
-<httpSample t="656" lt="648" ts="1309883043124" s="true" lb="Contract Search Form" rc="200" rm="OK" tn="Monitored Pages 1-1" dt="text" by="88440">
-  <java.net.URL>http://foo.bar/contracts/search/new</java.net.URL>
-</httpSample>
-<httpSample t="2112" lt="0" ts="1309883043875" s="true" lb="Contract Search" rc="200" rm="OK" tn="Monitored Pages 1-1" dt="text" by="74471">
-  <httpSample t="44" lt="44" ts="1309883043875" s="true" lb="http://foo.bar/contracts/search" rc="302" rm="Found" tn="Monitored Pages 1-1" dt="text" by="118">
-    <java.net.URL>http://foo.bar/contracts/search</java.net.URL>
-  </httpSample>
-  <httpSample t="2068" lt="2064" ts="1309883043919" s="true" lb="http://foo.bar/contracts/search/4231170/results" rc="200" rm="OK" tn="Monitored Pages 1-1" dt="text" by="74235">
-    <java.net.URL>http://foo.bar/contracts/search/4231170/results</java.net.URL>
-  </httpSample>
-  <java.net.URL>http://foo.bar/contracts/search/4231170/results</java.net.URL>
-</httpSample>
-<httpSample t="643" lt="638" ts="1309883045988" s="true" lb="My Alerts" rc="200" rm="OK" tn="Monitored Pages 1-1" dt="text" by="57282">
-  <java.net.URL>http://foo.bar/my_alerts</java.net.URL>
-</httpSample>
-<httpSample t="224" lt="220" ts="1309883046632" s="true" lb="Companies" rc="200" rm="OK" tn="Monitored Pages 1-1" dt="text" by="73082">
-  <java.net.URL>http://foo.bar/companies</java.net.URL>
-</httpSample>
-<httpSample t="5518" lt="5513" ts="1309883046856" s="true" lb="Budgets" rc="200" rm="OK" tn="Monitored Pages 1-1" dt="text" by="74048">
-  <java.net.URL>http://foo.bar/budgets</java.net.URL>
-</httpSample>
-<httpSample t="4402" lt="4397" ts="1309883052375" s="true" lb="Calendar" rc="200" rm="OK" tn="Monitored Pages 1-1" dt="text" by="78419">
-  <java.net.URL>http://foo.bar/calendar</java.net.URL>
-</httpSample>
-<httpSample t="711" lt="704" ts="1309883056778" s="true" lb="Places (Virginia)" rc="200" rm="OK" tn="Monitored Pages 1-1" dt="text" by="76632">
-  <java.net.URL>http://foo.bar/districts/6546</java.net.URL>
-</httpSample>
-<httpSample t="2913" lt="2899" ts="1309883057489" s="true" lb="Regulations" rc="200" rm="OK" tn="Monitored Pages 1-1" dt="text" by="148988">
-  <java.net.URL>http://foo.bar/regulations</java.net.URL>
-</httpSample>
-<httpSample t="2382" lt="2376" ts="1309883060403" s="true" lb="Defense Industry" rc="200" rm="OK" tn="Monitored Pages 1-1" dt="text" by="69078">
-  <java.net.URL>http://foo.bar/industries/defense</java.net.URL>
-</httpSample>
-<httpSample t="5706" lt="5694" ts="1309883062786" s="true" lb="Legislation Landing Page" rc="200" rm="OK" tn="Monitored Pages 1-1" dt="text" by="187780">
-  <java.net.URL>http://foo.bar/legislation</java.net.URL>
-</httpSample>
-<httpSample t="2281" lt="2275" ts="1309883068492" s="true" lb="Contracts Search (?)" rc="200" rm="OK" tn="Monitored Pages 1-1" dt="text" by="79249">
-  <java.net.URL>http://foo.bar/</java.net.URL>
-</httpSample>
-<httpSample t="4616" lt="4610" ts="1309883070774" s="true" lb="Regulations Search (?)" rc="200" rm="OK" tn="Monitored Pages 1-1" dt="text" by="78419">
-  <java.net.URL>http://foo.bar/calendar</java.net.URL>
-</httpSample>
-<httpSample t="5306" lt="5298" ts="1309883075391" s="true" lb="Calendar" rc="200" rm="OK" tn="Monitored Pages 1-1" dt="text" by="78419">
-  <java.net.URL>http://foo.bar/calendar</java.net.URL>
-</httpSample>
-
 </testResults>
