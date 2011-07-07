@@ -3,8 +3,7 @@
 This is currently under development. The functionality described below is the
 goal of this project.
 
-Parsing JMeter ouput into something useful. It will aggregate the data by 
-path.
+Parsing JMeter output into something useful.
 
 ### Install
 
@@ -14,12 +13,12 @@ path.
 ### CLI Usage
 
     meteoroid Output.jml #=> Output.json
-    meteoroid Output.jml foobar.json #=> foobar.json
+    meteoroid Output.jml Foobar.jml #=> Output.json
 
 ### Gem Usage
 
-    Meteoroid::Parser.parse!('/tmp/Output.jml') #=> {}
-    Meteoroid::Parser.parse!('/tmp/Output.jml', '/tmp/Output2.jml') #=> {}
+    Meteoroid::Parser.parse!('/tmp/Output.jml') #=> [Meteoroid::Sample, ...]
+    Meteoroid::Parser.parse!('/tmp/Output.jml', '/tmp/Output2.jml') #=> [Meteoroid::Sample, ...]
 
 ### Copyright
 
