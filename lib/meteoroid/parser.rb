@@ -1,11 +1,9 @@
-module Meteoroid::Parser
+class Meteoroid::Parser
+
+  attr_accessor :files
 
   def initialize *args
-    # TODO: Stuff
-  end
-
-  def self.parse! *args
-    new(args)
+    @files = Meteoroid::File.from(args)
   end
 
 end
