@@ -1,7 +1,4 @@
-# Meteoroid [![Build Status](http://travis-ci.org/itsmeduncan/meteoroid.png)](http://travis-ci.org/itsmeduncan/meteoroid)
-
-This is currently under development. The functionality described below is the
-goal of this project.
+# Meteoroid
 
 Parsing JMeter output into something useful.
 
