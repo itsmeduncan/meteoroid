@@ -14,6 +14,12 @@ class Meteoroid::File
     end.compact
   end
 
+  def samples
+    @samples ||= @xml.xpath('/testResults/httpSample').collect do |sample|
+      Meteoroid::Sample.from_xml(sample.attribute_nodes, sample.at_xpath('java.net.URL').text)
+    end
+  end
+
   private
 
     def parse_xml(file)

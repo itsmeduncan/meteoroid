@@ -24,6 +24,24 @@ describe Meteoroid::File do
     end
   end
 
+  describe "#samples" do
+    it "should return stuff" do
+      File.stubs(:open).with("foo.jml").times(1).returns(StringIO.new(@xml))
+      file = Meteoroid::File.new("foo.jml")
+      file.samples.should_not be_empty
+    end
+
+    it "should only parse the file once" do
+      File.stubs(:open).with("foo.jml").times(1).returns(StringIO.new(@xml))
+      file = Meteoroid::File.new("foo.jml")
+
+      file.xml.expects(:xpath).times(1).returns([])
+
+      2.times { file.samples }
+    end
+
+  end
+
   describe "#xml" do
 
     describe "valid file" do
