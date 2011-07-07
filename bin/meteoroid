@@ -3,4 +3,4 @@
 $LOAD_PATH.unshift File.dirname(__FILE__) + '/../lib'
 require 'meteoroid'
 
-Meteoroid::Parser.parse!(ARGV)
+# Meteoroid::Parser.file!(ARGV)

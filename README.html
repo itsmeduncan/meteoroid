@@ -1,0 +1,23 @@
+<h1>Meteoroid</h1>
+
+<p>Parsing JMeter output into something useful.</p>
+
+<h3>Install</h3>
+
+<pre><code>gem install meteoroid
+</code></pre>
+
+<!-- ### CLI Usage
+
+    meteoroid Output.jml #=> Output.json
+    meteoroid Output.jml Foobar.jml #=> Output.json -->
+
+<h3>Ruby Usage</h3>
+
+<pre><code>Meteoroid::Parser.parse!('/tmp/Output.jml') #=&gt; [Meteoroid::Sample, ...]
+Meteoroid::Parser.parse!('/tmp/Output.jml', '/tmp/Output2.jml') #=&gt; [Meteoroid::Sample, ...]
+</code></pre>
+
+<h3>Copyright</h3>
+
+<p>Copyright (c) 2011 Impossible Rocket, Inc. See LICENSE for further details.</p>

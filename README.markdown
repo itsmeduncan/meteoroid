@@ -7,12 +7,12 @@ Parsing JMeter output into something useful.
     gem install meteoroid
 
 
-### CLI Usage
+<!-- ### CLI Usage
 
     meteoroid Output.jml #=> Output.json
-    meteoroid Output.jml Foobar.jml #=> Output.json
+    meteoroid Output.jml Foobar.jml #=> Output.json -->
 
-### Gem Usage
+### Ruby Usage
 
     Meteoroid::Parser.parse!('/tmp/Output.jml') #=> [Meteoroid::Sample, ...]
     Meteoroid::Parser.parse!('/tmp/Output.jml', '/tmp/Output2.jml') #=> [Meteoroid::Sample, ...]
