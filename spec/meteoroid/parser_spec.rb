@@ -46,4 +46,15 @@ describe Meteoroid::Parser do
       parsed.size.should == 562
     end
   end
+
+  describe "self.parse!" do
+    it "should parse the passed in files" do
+      xml = File.read(File.join(File.dirname(__FILE__), %w[ .. fixtures example.jml ]))
+      File.expects(:open).times(1).returns(StringIO.new(xml))
+
+      parsed = Meteoroid::Parser.parse!('foo.jml')
+
+      parsed.size.should == 2
+    end
+  end
 end
