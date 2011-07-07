@@ -45,6 +45,15 @@ describe Meteoroid::Parser do
 
       parsed.size.should == 562
     end
+
+    it "should be able to handle a single example" do
+      xml = File.read(File.join(File.dirname(__FILE__), %w[ .. fixtures single.jml ]))
+      File.expects(:open).times(1).returns(StringIO.new(xml))
+
+      parsed = Meteoroid::Parser.new('foo.jml').parse
+
+      parsed.size.should == 1
+    end
   end
 
   describe "self.parse!" do

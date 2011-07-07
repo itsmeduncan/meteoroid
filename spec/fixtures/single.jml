@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="2622" lt="2615" ts="1309883025068" s="true" lb="Federal Legislator Search" rc="200" rm="OK" tn="Monitored Pages 1-1" dt="text" by="87109">
+  <java.net.URL>http://foo.bar/federal_legislator_search</java.net.URL>
+</httpSample>
+</testResults>
